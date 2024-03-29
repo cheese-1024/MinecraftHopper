@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 body {
-    color: #606c71;
+    background-color: #191c1c;
+    color: #e0e3e2;
     font-size:1em;
     line-height:1.5em;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
-
+ 
 #page-content-wrapper {
     margin: 0 auto;
     max-width: 1080px;
@@ -30,6 +31,47 @@ body {
 
 .page-header {
 	font-family: 'Trebuchet MS', 'Helvetica Neue', Helvetica, Arial, sans-serif; padding-top: 20px;
+}
+
+.container-fluid {
+  padding: 0;
+  background-color: #324b4a;
+}
+
+#site-title {
+  padding: 20px 0 0 20px;
+}
+
+.navbar {
+  background-color: #324b4a;
+  width: 100%;
+  padding: 0;
+}
+
+.navbar p {
+  padding-left: 20px;
+}
+
+.navbar * {
+   color: #bec9c7;
+}
+ 
+.navbar .container-fluid {
+  height: 100%;
+  margin: auto;
+}
+
+.navbar .container-fluid .navbar-brand {
+  padding-left: 20px;
+}
+
+.navbar-brand {
+  color: #cce8e6;
+  font-size: 25px;
+}
+
+a.nav-link {
+  padding-left: 20px;
 }
 
 .software-name, .software-versions, .software-notes{
@@ -103,6 +145,11 @@ ul ol {
 code {
   font-size:1em;
   line-height:1.5em;
+}
+
+.main-content {
+  width: 75%;
+  margin: auto;
 }
 
 .main-content table {
