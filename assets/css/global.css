@@ -12,17 +12,15 @@ body {
     max-width: 1080px;
 }
 
-.masthead, #masthead, .help-page-header, h1{
-	background-color: darkslategray;
-	color: whitesmoke;
+.masthead, #masthead, .help-page-header, h1 {
+	color: #e0e3e2;
 	display: block;
 	font-size: 2em;
 	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
-	 line-height: 2em;
-	 margin: 1em 0em;
-	 padding: 1em 0em;
-	 text-align: center;
-	 width: 100%;
+	line-height: 2em;
+  padding-top: 0.5em;
+	text-align: center;
+	width: 100%;
 }
 
 .home-container {
@@ -43,7 +41,7 @@ body {
 }
 
 #help-pages {
-  border-radius: 0.375rem;
+  background-color: transparent;
 }
 
 .navbar {
