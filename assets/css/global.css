@@ -1,7 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+
+:root {
+  --primary: #4ddad7;
+  --on-primary: #003736;
+  --primary-container: #00504e;
+  --on-primary-container: #6ff7f4;
+  --secondary: #b0ccca;
+  --on-secondary: #1b3534;
+  --secondary-container: #324b4a;
+  --on-secondary-container: #cce8e6;
+  --tertiary: #b2c8e8;
+  --on-tertiary: #1b324b;
+  --tertiary-container: #324863;
+  --on-tertiary-container: #d2e4ff;
+  --error: #ffb4ab;
+  --error-container: #93000a;
+  --on-error: #690005;
+  --on-error-container: #ffdad6;
+  --background: #191c1c;
+  --on-background: #e0e3e2;
+  --surface: #191c1c;
+  --on-surface: #e0e3e2;
+  --surface-variant: #3f4948;
+  --on-surface-variant: #bec9c7;
+  --outline: #889392;
+  --inverse-on-surface: #191c1c;
+  --inverse-surface: #e0e3e2;
+  --inverse-primary: #006a68;
+  --shadow: #000000;
+  --surface-tint: #4ddad7;
+  --outline-variant: #3f4948;
+  --scrim: #000000;
+}
+
 body {
-    background-color: #191c1c;
-    color: #e0e3e2;
+    background-color: var(--background);
+    color: var(--on-background);
     font-size:1em;
     line-height:1.5em;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -13,7 +47,7 @@ body {
 }
 
 .masthead, #masthead, .help-page-header, h1 {
-	color: #e0e3e2;
+	color: var(--on-background);
 	display: block;
 	font-size: 2em;
 	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
@@ -33,7 +67,7 @@ body {
 
 .container-fluid {
   padding: 0;
-  background-color: #00504e;
+  background-color: var(--primary-container);
 }
 
 #site-title {
@@ -45,7 +79,7 @@ body {
 }
 
 .navbar {
-  background-color: #00504e;
+  background-color: var(--primary-container);
   width: 100%;
   padding: 0;
 }
@@ -55,7 +89,7 @@ body {
 }
 
 .navbar * {
-   color: #bec9c7;
+   color: var(--on-surface);
 }
  
 .navbar .container-fluid {
@@ -68,24 +102,32 @@ body {
 }
 
 .navbar-brand {
-  color: #cce8e6;
+  color: var(--on-surface);
   font-size: 25px;
+}
+
+.navbar-brand:hover {
+  color: var(--secondary) 
 }
 
 a.nav-link {
   padding-left: 20px;
 }
 
+.breadcrumb {
+  color: ;
+}
+
 .card {
-  background-color: #324b4a;
+  background-color: var(--secondary-container);
 }
 
 .card-title a {
-  color: #d2e4ff;
+  color: var(--on-secondary-container);
 }
 
 .card-text {
-  color: #d2e4ff;
+  color: var(--on-secondary-container);
 }
 
 .software-name, .software-versions, .software-notes{
@@ -109,19 +151,19 @@ a.nav-link {
 
 h2 {
   margin: 2em 0em;
-  color: #303A50;
+  color: var(--on-background);
   font-size: 2em;
 }
 
 h3 {
   margin: 1.62em 0em;
-  color: #303A50;
+  color: var(--on-background);
   font-size: 1.62em;
 }
 
 h4 {
   margin: 1.5em 0em;
-  color: #303A50;
+  color: var(--on-background);
   font-size: 1em;
 }
 
@@ -135,10 +177,9 @@ summary {
 }
 
 #query {
-  background-color: #191c1c;
-  border-color: #889392;
-  color: #e0e3e2;
-
+  background-color: var(--background);
+  border-color: var(--outline);
+  color: var(--on-background);
 }
 
 img {
@@ -174,9 +215,9 @@ code {
 }
 
 .main-content table {
-    color: #333;
-    background: white;
-    border: 1px solid grey;
+    color: var(--on-background);
+    background: var(--background);
+    border: 1px solid var(--outline);
     font-size: 12pt;
     border-collapse: collapse;
 }
@@ -189,7 +230,7 @@ code {
 .main-content th,
 .main-content td {
     padding: .5em;
-    border: 1px solid lightgrey;
+    border: 1px solid var(--outline);
 }
 
 a {
@@ -206,5 +247,5 @@ footer > div {
   max-width: none !important;
   width: 100%;
   margin: 0 !important;
-  background-color: #00504e;
+  background-color: var(--primary-container);
 }
