@@ -107,7 +107,8 @@ body {
 }
 
 .navbar-brand:hover {
-  color: var(--secondary) 
+  color: rgba(0, 0, 0, 0.7);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 a.nav-link {
@@ -124,6 +125,11 @@ a.nav-link {
 
 .card-title a {
   color: var(--on-secondary-container);
+}
+
+.card-title a:hover {
+  color: rgba(0, 0, 0, 0.7);
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .card-text {
